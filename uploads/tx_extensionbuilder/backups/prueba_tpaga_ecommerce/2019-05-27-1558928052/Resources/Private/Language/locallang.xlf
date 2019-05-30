@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-05-27T03:34:08Z" product-name="prueba_tpaga_ecommerce">
+		<header/>
+		<body>
+			<trans-unit id="tx_pruebatpagaecommerce_domain_model_costumer">
+				<source>Costumer</source>
+			</trans-unit>
+			<trans-unit id="tx_pruebatpagaecommerce_domain_model_product">
+				<source>Product</source>
+			</trans-unit>
+			<trans-unit id="tx_pruebatpagaecommerce_domain_model_product.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_pruebatpagaecommerce_domain_model_product.cover">
+				<source>Cover</source>
+			</trans-unit>
+			<trans-unit id="tx_pruebatpagaecommerce_domain_model_product.captures">
+				<source>Captures</source>
+			</trans-unit>
+			<trans-unit id="tx_pruebatpagaecommerce_domain_model_product.price">
+				<source>Price</source>
+			</trans-unit>
+			<trans-unit id="tx_pruebatpagaecommerce_domain_model_product.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_pruebatpagaecommerce_domain_model_product.stock">
+				<source>Stock</source>
+			</trans-unit>
+			<trans-unit id="tx_pruebatpagaecommerce_domain_model_sale">
+				<source>Sale</source>
+			</trans-unit>
+			<trans-unit id="tx_pruebatpagaecommerce_domain_model_sale.identifier">
+				<source>Identifier</source>
+			</trans-unit>
+			<trans-unit id="tx_pruebatpagaecommerce_domain_model_sale.amount">
+				<source>Amount</source>
+			</trans-unit>
+			<trans-unit id="tx_pruebatpagaecommerce_domain_model_sale.link_pay">
+				<source>Link Pay</source>
+			</trans-unit>
+			<trans-unit id="tx_pruebatpagaecommerce_domain_model_sale.status">
+				<source>Status</source>
+			</trans-unit>
+			<trans-unit id="tx_pruebatpagaecommerce_domain_model_sale.buyer">
+				<source>Buyer</source>
+			</trans-unit>
+			<trans-unit id="tx_pruebatpagaecommerce_domain_model_sale.purchased_product">
+				<source>Purchased Product</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

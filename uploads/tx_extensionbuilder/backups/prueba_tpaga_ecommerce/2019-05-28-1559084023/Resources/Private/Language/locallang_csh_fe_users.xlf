@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-05-28T03:36:11Z" product-name="prueba_tpaga_ecommerce">
+		<header/>
+		<body>
+			<trans-unit id="document_type.description">
+				<source>Es el tipo de documento de identificación de un comprador</source>
+			</trans-unit>
+			<trans-unit id="number_i_d.description">
+				<source>Es el número de identificación de un comprador</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,37 @@
+<html xmlns:f="https://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+	<f:layout name="Default" />
+
+	This Template is responsible for creating a table of domain objects.
+
+	If you modify this template, do not forget to change the overwrite settings
+	in /Configuration/ExtensionBuilder/settings.yaml:
+	  Resources:
+		Private:
+		  Templates:
+			List.html: keep
+
+	Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+	<f:section name="content">
+		<h1>Productos del minicomercio de Videojuegos</h1>
+
+		<f:flashMessages />
+
+		<table  class="tx_pruebatpagaecommerce" >
+			<tr>
+				<th><f:translate key="tx_pruebatpagaecommerce_domain_model_product.name" /></th>
+				<th><f:translate key="tx_pruebatpagaecommerce_domain_model_product.cover" /></th>
+				<th><f:translate key="tx_pruebatpagaecommerce_domain_model_product.price" /></th>
+			</tr>
+
+			<f:for each="{products}" as="product">
+				<tr>
+					<td><f:link.action action="show" arguments="{product : product}"> {product.name}</f:link.action></td>
+					<td><f:link.action action="show" arguments="{product : product}"> <f:image src="{product.cover.originalResource.publicUrl}"/></f:link.action></td>
+					<td><f:link.action action="show" arguments="{product : product}"> {product.price}</f:link.action></td>
+				</tr>
+			</f:for>
+		</table>
+
+	</f:section>
+</html>

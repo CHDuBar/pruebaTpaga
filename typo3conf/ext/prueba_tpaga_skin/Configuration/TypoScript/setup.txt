@@ -1,0 +1,7 @@
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:prueba_tpaga_skin/Configuration/TypoScript/Menu/main.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:prueba_tpaga_skin/Configuration/TypoScript/Menu/breadcrumb.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:prueba_tpaga_skin/Configuration/TypoScript/Page/system.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:prueba_tpaga_skin/Configuration/TypoScript/Page/page.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:prueba_tpaga_skin/Configuration/TypoScript/Page/config.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:prueba_tpaga_skin/Configuration/TypoScript/Language/config.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:prueba_tpaga_skin/Configuration/TypoScript/Page/template.ts">

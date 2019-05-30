@@ -1,0 +1,28 @@
+{
+    "name": "chdubar/prueba-tpaga-ecommerce",
+    "type": "typo3-cms-extension",
+    "description": "Esta extensi\u00f3n representa un peque\u00f1o ecommerce de videojuegos que emplea la billetera Tpaga como medio de pago",
+    "authors": [
+        {
+            "name": "C\u00e9sar Hansy Due\u00f1as Barrag\u00e1n",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "typo3/cms-core": "^8.7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "CHDuBar\\PruebaTpagaEcommerce\\": "Classes"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "CHDuBar\\PruebaTpagaEcommerce\\Tests\\": "Tests"
+        }
+    },
+    "replace": {
+        "prueba_tpaga_ecommerce": "self.version",
+        "typo3-ter/prueba-tpaga-ecommerce": "self.version"
+    }
+}

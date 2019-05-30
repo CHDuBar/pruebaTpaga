@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-05-27T01:46:46Z" product-name="prueba_tpaga_ecommerce">
+		<header/>
+		<body>
+			<trans-unit id="tx_prueba_tpaga_ecommerce_ecommercevideojuegos.name">
+				<source>Ecommerce de Videojuegos</source>
+			</trans-unit>
+			<trans-unit id="tx_prueba_tpaga_ecommerce_ecommercevideojuegos.description">
+				<source>Este plugin muestra los videojuegos que se pueden adquirir en el ecommerce y todo su proceso de compra</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

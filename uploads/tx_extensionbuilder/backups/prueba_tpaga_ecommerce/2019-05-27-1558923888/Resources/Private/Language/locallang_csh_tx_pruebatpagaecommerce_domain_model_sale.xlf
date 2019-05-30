@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-05-27T02:23:45Z" product-name="prueba_tpaga_ecommerce">
+		<header/>
+		<body>
+			<trans-unit id="buyer.description">
+				<source>Es el comprador del producto</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

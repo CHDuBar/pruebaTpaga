@@ -1,0 +1,49 @@
+{
+  "name": "jambagecom/fh-debug",
+  "type": "typo3-cms-extension",
+  "description": "PHP debugger, sys_log and devLog Logger",
+  "license": "GPL-2.0+",
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://composer.typo3.org"
+    }
+  ],
+  "keywords": [
+    "TYPO3 CMS",
+    "debug",
+    "devlog",
+    "syslog",
+    "oops",
+    "error"
+  ],
+  "support": {
+    "issues": "https://github.com/franzholz/fh_debug/issues"
+  },
+  "homepage": "https://jambage.com",
+  "authors": [
+    {
+      "name": "Franz Holzinger",
+      "role": "Developer",
+      "homepage": "https://ttproducts.de"
+    }
+  ],
+  "replace": {
+    "fh_debug": "self.version",
+    "typo3-ter/fh-debug": "self.version"
+  },
+  "require": {
+    "php": ">=5.5.0",
+    "typo3/cms-core": ">=7.6,<9.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "JambageCom\\FhDebug\\": "Classes/"
+    }
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "fh_debug"
+    }
+  }
+}

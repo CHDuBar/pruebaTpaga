@@ -1,0 +1,38 @@
+<html xmlns:f="https://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<h2>Datos del cliente</h2>
+
+<div class="row">
+	<div class="col-4">Nombre</div>
+	<div class="col-8">
+		<f:form.textfield name="customer[name]" value="" placeholder="Escriba su nombre" required="true" type="text" />
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-4">Apellido</div>
+	<div class="col-8">
+		<f:form.textfield name="customer[name]" value="" placeholder="Escriba su apellido" required="true" type="text" />
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-4">Email</div>
+	<div class="col-8">
+		<f:form.textfield name="customer[name]" value="" placeholder="Escriba su nombre" required="true" type="email" />
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-4">Tipo de Documento</div>
+	<div class="col-8">
+			<f:form.select name="paymentOptions" prependOptionLabel="Seleccione una opción" options="{cc: 'Cédula de Ciudadania', ti: 'Tarjeta de Identidad'}" additionalAttributes="{required:'required'}"/>
+	</div>
+</div>
+
+<div class="row">
+		<div class="col-4">Número de Documento</div>
+		<div class="col-8">
+			<f:form.textfield name="customer[name]" value="" placeholder="Escriba su nombre" required="true" type="email" />
+		</div>
+	</div>

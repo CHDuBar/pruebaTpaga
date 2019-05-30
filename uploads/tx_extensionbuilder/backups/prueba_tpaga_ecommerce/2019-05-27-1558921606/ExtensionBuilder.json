@@ -1,0 +1,61 @@
+{
+    "modules": [],
+    "properties": {
+        "backendModules": [
+            {
+                "actions": {
+                    "controllerActionCombinations": ""
+                },
+                "description": "A trav\u00e9s de este modulo, un administrador de la plataforma puede observar los pedidos de la misma.",
+                "key": "listadopedidos",
+                "mainModule": "web",
+                "name": "Listado de Pedidos",
+                "tabLabel": ""
+            }
+        ],
+        "description": "Esta extensi\u00f3n representa un peque\u00f1o ecommerce de videojuegos que emplea la billetera Tpaga como medio de pago",
+        "emConf": {
+            "category": "services",
+            "custom_category": "",
+            "dependsOn": "typo3 => 8.7.0-8.7.99\n",
+            "disableLocalization": false,
+            "disableVersioning": false,
+            "skipGenerateDocumentationTemplate": false,
+            "sourceLanguage": "en",
+            "state": "alpha",
+            "targetVersion": "8.7.0-8.7.99",
+            "version": "1.0.0"
+        },
+        "extensionKey": "prueba_tpaga_ecommerce",
+        "name": "Ecommerce Videojuegos Tpaga",
+        "originalExtensionKey": "",
+        "originalVendorName": "",
+        "persons": [
+            {
+                "company": "",
+                "email": "cesart234@gmail.com",
+                "name": "C\u00e9sar Hansy Due\u00f1as Barrag\u00e1n",
+                "role": "Developer"
+            }
+        ],
+        "plugins": [
+            {
+                "actions": {
+                    "controllerActionCombinations": "",
+                    "noncacheableActions": "",
+                    "switchableActions": ""
+                },
+                "description": "Este plugin muestra los videojuegos que se pueden adquirir en el ecommerce y todo su proceso de compra",
+                "key": "ecommercevideojuegos",
+                "name": "Ecommerce de Videojuegos"
+            }
+        ],
+        "vendorName": "CHDuBar"
+    },
+    "wires": [],
+    "log": {
+        "last_modified": "2019-05-27 01:43",
+        "extension_builder_version": "8.10.3",
+        "be_user": " (2)"
+    }
+}

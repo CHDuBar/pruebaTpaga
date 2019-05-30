@@ -1,0 +1,211 @@
+{
+    "modules": [
+        {
+            "config": {
+                "position": [
+                    679,
+                    82
+                ]
+            },
+            "name": "New Model Object",
+            "value": {
+                "actionGroup": {
+                    "_default0_list": false,
+                    "_default1_show": false,
+                    "_default2_new_create": false,
+                    "_default3_edit_update": false,
+                    "_default4_delete": false,
+                    "customActions": []
+                },
+                "name": "Costumer",
+                "objectsettings": {
+                    "addDeletedField": true,
+                    "addHiddenField": true,
+                    "addStarttimeEndtimeFields": true,
+                    "aggregateRoot": true,
+                    "categorizable": false,
+                    "description": "Es quien realiza una compra",
+                    "mapToTable": "fe_users",
+                    "parentClass": "\\TYPO3\\CMS\\Extbase\\Domain\\Model\\FrontendUser",
+                    "skipTypeConfiguration": false,
+                    "sorting": false,
+                    "type": "Entity",
+                    "uid": "675914847108"
+                },
+                "propertyGroup": {
+                    "properties": []
+                },
+                "relationGroup": {
+                    "relations": []
+                }
+            }
+        },
+        {
+            "config": {
+                "position": [
+                    103,
+                    55
+                ]
+            },
+            "name": "New Model Object",
+            "value": {
+                "actionGroup": {
+                    "_default0_list": true,
+                    "_default1_show": true,
+                    "_default2_new_create": false,
+                    "_default3_edit_update": false,
+                    "_default4_delete": false,
+                    "customActions": [
+                        "addCart"
+                    ]
+                },
+                "name": "Product",
+                "objectsettings": {
+                    "addDeletedField": true,
+                    "addHiddenField": true,
+                    "addStarttimeEndtimeFields": true,
+                    "aggregateRoot": true,
+                    "categorizable": true,
+                    "description": "Es un videojuego en venta",
+                    "mapToTable": "",
+                    "parentClass": "",
+                    "skipTypeConfiguration": false,
+                    "sorting": true,
+                    "type": "Entity",
+                    "uid": "475348920771"
+                },
+                "propertyGroup": {
+                    "properties": [
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "Es el nombre del videojuego",
+                            "propertyIsExcludeField": true,
+                            "propertyIsL10nModeExclude": false,
+                            "propertyIsRequired": true,
+                            "propertyName": "name",
+                            "propertyType": "String",
+                            "uid": "1508868470809"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "Es la imagen de la portada del juego",
+                            "propertyIsExcludeField": true,
+                            "propertyIsL10nModeExclude": false,
+                            "propertyIsRequired": true,
+                            "propertyName": "cover",
+                            "propertyType": "Image",
+                            "uid": "421940446249"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "5",
+                            "propertyDescription": "Corresponde a imagenes adicionales del juego que puede tener o no el producto",
+                            "propertyIsExcludeField": true,
+                            "propertyIsL10nModeExclude": false,
+                            "propertyIsRequired": false,
+                            "propertyName": "captures",
+                            "propertyType": "Image",
+                            "uid": "1300244311193"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "Es el precio que tiene el videojuego",
+                            "propertyIsExcludeField": true,
+                            "propertyIsL10nModeExclude": false,
+                            "propertyIsRequired": true,
+                            "propertyName": "price",
+                            "propertyType": "Float",
+                            "uid": "653205002516"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "Es la descripci\u00f3n del videojuego",
+                            "propertyIsExcludeField": true,
+                            "propertyIsL10nModeExclude": false,
+                            "propertyIsRequired": true,
+                            "propertyName": "description",
+                            "propertyType": "Text",
+                            "uid": "689028679734"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "Es la cantidad de elementos del videojuego que se encuentran en existencia en inventario",
+                            "propertyIsExcludeField": true,
+                            "propertyIsL10nModeExclude": false,
+                            "propertyIsRequired": true,
+                            "propertyName": "stock",
+                            "propertyType": "Integer",
+                            "uid": "1517580240843"
+                        }
+                    ]
+                },
+                "relationGroup": {
+                    "relations": []
+                }
+            }
+        }
+    ],
+    "properties": {
+        "backendModules": [
+            {
+                "actions": {
+                    "controllerActionCombinations": "Sale => list, show"
+                },
+                "description": "A trav\u00e9s de este modulo, un administrador de la plataforma puede observar los pedidos realizados y los estados de cada una de las transacciones",
+                "key": "listadooperaciones",
+                "mainModule": "web",
+                "name": "Listado de Operaciones",
+                "tabLabel": ""
+            }
+        ],
+        "description": "Esta extensi\u00f3n representa un peque\u00f1o ecommerce de videojuegos que emplea la billetera Tpaga como medio de pago",
+        "emConf": {
+            "category": "services",
+            "custom_category": "",
+            "dependsOn": "typo3 => 8.7.0-8.7.99\n",
+            "disableLocalization": false,
+            "disableVersioning": false,
+            "skipGenerateDocumentationTemplate": false,
+            "sourceLanguage": "en",
+            "state": "alpha",
+            "targetVersion": "8.7.0-8.7.99",
+            "version": "1.0.0"
+        },
+        "extensionKey": "prueba_tpaga_ecommerce",
+        "name": "Ecommerce Videojuegos Tpaga",
+        "originalExtensionKey": "prueba_tpaga_ecommerce",
+        "originalVendorName": "CHDuBar",
+        "persons": [
+            {
+                "company": "",
+                "email": "cesart234@gmail.com",
+                "name": "C\u00e9sar Hansy Due\u00f1as Barrag\u00e1n",
+                "role": "Developer"
+            }
+        ],
+        "plugins": [
+            {
+                "actions": {
+                    "controllerActionCombinations": "",
+                    "noncacheableActions": "",
+                    "switchableActions": ""
+                },
+                "description": "Este plugin muestra los videojuegos que se pueden adquirir en el ecommerce y todo su proceso de compra",
+                "key": "ecommercevideojuegos",
+                "name": "Ecommerce de Videojuegos"
+            }
+        ],
+        "vendorName": "CHDuBar"
+    },
+    "wires": [],
+    "log": {
+        "last_modified": "2019-05-27 02:22",
+        "extension_builder_version": "8.10.3",
+        "be_user": " (2)"
+    }
+}

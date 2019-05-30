@@ -1,0 +1,21 @@
+1. Realizar el modelo E/R de la extensión de ecommerce teniendo en cuenta los parámetros dados
+    Tiempo estimado: 1 hora
+    Tiempo real: 45 min
+
+2. Creación de vistas y lógica de negocio dentro del ecommerce para los productos
+    2.1 Creación de la vista de productos list/show
+        Tiempo estimado: 45 min
+        Tiempo real: 1 hora y 17 min
+    
+    2.2 Creación de la vista para pago, involucra la creación del comprador
+        Tiempo estimado: 1 hora y 30 minutos
+        Tiempo real: 2 hora y 57 minutos
+
+3.  Creación del módulo de Backend para la labor correspondiente en operaciones y seguimiento de las ventas
+    Tiempo estimado: 1 hora
+    Tiempo real:
+
+4. Integración con el api de Tpaga para realizar los pagos desde la billetera
+    Tiempo estimado: 5 horas
+    Tiempo real: 1 hora y 40 min
+    

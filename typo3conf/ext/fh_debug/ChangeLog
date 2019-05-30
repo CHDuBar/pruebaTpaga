@@ -1,0 +1,177 @@
+2019-03-03 Franz Holzinger <franz@ttproducts.de>
+    * new feature: Make the date time format configurable. Add a date time stamp with each debugBegin and debugEnd.
+
+2019-02-08 Franz Holzinger <franz@ttproducts.de>
+    * new feature: Determine the relative path to the domain for TYPO3 in order to determine the path to the CSS file
+
+2018-12-14 Franz Holzinger <franz@ttproducts.de>
+    * new feature: allow a prefix before the path to the CSS file
+
+2018-10-17 Franz Holzinger <franz@ttproducts.de>
+     * Do not debug any output from sysLog if the exclude expression matches even if a debugBegin has been executed before.
+     * modification of composer.json
+
+2018-10-03 Franz Holzinger <franz@ttproducts.de>
+     * remove the reset file feature because it seems not to be useful
+
+2018-09-29 Franz Holzinger <franz@ttproducts.de>
+    * improvement: replace the ReflectionClass and the methods getProperties and getProperty by a conversion function from object to array from http://php.net/manual/en/function.get-object-vars.php . This is needed because a stdClass object did not show any member variables.
+
+2018-09-22 Franz Holzinger <franz@ttproducts.de>
+     * bugfix for TYPO3 9.3: add debugBegin and debugEnd to the patch for TYPO3 9.3.3
+
+2018-09-13 Franz Holzinger <franz@ttproducts.de>
+     * important bugtracker entry 86220 based on 23899: debugBegin and debugEnd is missing in TYPO3 9.3.3
+
+2018-09-01 Franz Holzinger <franz@ttproducts.de>
+     * add a Patches folder with the necessary patch of the file GlobalDebugFunctions.php for TYPO3 9.3.3
+     * deprecation: do not use the variable $_EXTKEY any more.
+     * new feature: only check for a maximum file size if it is greater than 0
+
+2018-08-21 Franz Holzinger <franz@ttproducts.de>
+    * support for TYPO3 8.7.x: Remove the parameter $debugLevel which has never been used.
+        Global function debug() initializes its 6th argument to constant E_DEBUG which does not exist and then defaults to string 'E_DEBUG'. This raises a PHP 7.2 warning. see bug #83200.
+    * Remove the file ext_autoload.php because composer will do this job.
+
+2018-08-11 Franz Holzinger <franz@ttproducts.de>
+    * support for TYPO3 9.3.x: see the manual for instructions
+
+2018-06-05  Franz Holzinger  <franz@ttproducts.de>
+    * bugfix: only use the hooks if the IP addresses and the TYPO3 mode match
+
+2018-05-28  Franz Holzinger  <franz@ttproducts.de>
+    * new feature: option to set a regular expression for sys_log entries which will not produce an entry in the debug log. This is needed in order not to overwrite a debug file with uninteresting no_cache warnings.
+    * do not debug sys_log if $params['initLog'] is true
+
+2018-04-18  Franz Holzinger  <franz@ttproducts.de>
+    * new feature: Use the option MAXSIZE to set the maximum size for a debug file.
+    * convert the code from self into static variable and method calls.
+
+2018-01-17  Franz Holzinger  <franz@ttproducts.de>
+    * changed display: Move the variable name into the middle and the backtrace in reverse order to the bottom of the debug line.
+
+2017-11-28  Franz Holzinger  <franz@ttproducts.de>
+    * bug fix: The debug of the systemLog must be based on a core hook. It shall not rely on another extension which writes the sys_log file.
+
+2017-08-08  Franz Holzinger  <franz@ttproducts.de>
+    * Make the path to the CSS file configurable. EXT:fh_debug means that the path to the CSS folder of this extension is used.
+
+2017-07-12  Franz Holzinger  <franz@ttproducts.de>
+    * adaptions to Coding Guidelines
+
+2017-07-04  Franz Holzinger  <franz@ttproducts.de>
+    * new feature: Use a XCLASS for the TYPO3 7.x class ExtDirectRouter which overwrites the global ERROR object. Use the fh_debug error object instead.
+
+2017-04-10  Franz Holzinger  <franz@ttproducts.de>
+    * works with TYPO3 8.x
+    * add a composer.json file
+
+2017-01-23  Franz Holzinger  <franz@ttproducts.de>
+	* new feature:  Add dynamic information to the text label shown in the Extension Manager. The client's current IP address is shown there and can be copy-pasted into the form entry field.
+
+2017-01-17  Franz Holzinger  <franz@ttproducts.de>
+	* new feature: sys_log shall be debuggable even if no debugBegin has been executed before
+	* new feature: PROXY = 1 if the HTTP_X_FORWARDED_FOR variable shall determine the client ip address. This must be 0 in the Deutsche Bahn ICE.
+	* new feature: make the title html tag configurable in order to name the debug files
+	* bug fix: the output of an exception must not be in HTML format
+
+2016-08-04  Franz Holzinger  <franz@ttproducts.de>
+	* new feature: #77277 Give detailed debug info and more frontend output with "Oops, an error occurred!"
+	* bug fix: devLog did not work
+
+2016-06-02  Franz Holzinger  <franz@ttproducts.de>
+	* bug fix: debug array with empty keys
+	* new feature: add a header called Array to arrays
+	* new feature: declare boolean, integer and float
+	* support PHP 7.x and all TYPO3 7.x
+	* add README.txt
+
+2015-07-24  Franz Holzinger  <franz@ttproducts.de>
+	* tested under TYPO3 7.4.0
+
+2014-10-08  Franz Holzinger  <franz@ttproducts.de>
+	* new feature: show private and protected object properties using the Reflection Classes
+	* new feature: ignore some variable names, array keys and object member variable names
+
+2014-08-07  Franz Holzinger  <franz@ttproducts.de>
+	* fix bug with TRACEDEPTH
+	* use a class el for the value output inside of a table
+
+2014-03-19  Franz Holzinger  <franz@ttproducts.de>
+	* do not show the files GlobalDebugFunctions.php and DebugFunctions in the trace
+	* new feature: debug the devLog
+	* new feature: allow debug output into the debug file and into the error_log file simultaneously.
+
+2013-11-21  Franz Holzinger  <franz@ttproducts.de>
+	* restructuring of the code for TYPO3 6.2
+
+2013-05-27  Franz Holzinger  <franz@ttproducts.de>
+	* new feature: an error_log file can be used instead of the debug output file
+	* bug fix: the ip address mask * must allow all ip addresses even the empty one
+
+2012-04-14  Franz Holzinger  <franz@ttproducts.de>
+	* set the HTML Doctype to XHTML 1.0 and the meta charset to utf-8
+
+2012-03-28  Franz Holzinger  <franz@ttproducts.de>
+	* new feature: parameter STARTFILE to limit the debug output generation to index.php or ajax.php
+	* convert the output into UTF-8
+
+2012-03-07  Franz Holzinger  <franz@ttproducts.de>
+
+	* bug fix: not fitting ip addresses shall not overwrite the debug file
+
+2011-12-22  Franz Holzinger  <franz@ttproducts.de>
+
+	* bug fix: No writing of the debug output if the IP address does not fit
+
+2011-12-03  Franz Holzinger  <franz@ttproducts.de>
+
+	* bug fix: Use fh_debug also if the ip address does not match. No debug output shall be shown in the FE.
+	* Remove the color functions. The colors shall be set in the CSS file instead.
+
+2011-10-29  Franz Holzinger  <franz@ttproducts.de>
+
+	* bug fix: close the header tag
+	* new feature: use a CSS file instead of the included styles on each HTML tag
+
+2011-04-19  Franz Holzinger  <franz@ttproducts.de>
+
+	* bug fix: HTML output could not be activated
+	* new feature: generate FE output in the TYPO3 renderCharset.
+
+2011-03-24  Franz Holzinger  <franz@ttproducts.de>
+
+	* new feature: textual debug without HTML. A text editor is much faster than a webbrowser. The text file is much smaller than a HTML file.
+
+2011-03-23  Franz Holzinger  <franz@ttproducts.de>
+
+	* new feature: define the colors of the HTML data table or remove the color to save space
+
+2010-08-16  Franz Holzinger  <franz@ttproducts.de>
+
+	* show the starting date and time at the beginning of the debug file output
+	* make a syslog entry if the DEBUGFILE is not writable
+	* check for availability of the method debugStart and debugEnd because another debug extension could have been installed.
+	* new feature: debug file mode to allow to overwrite the debug file automatically
+
+2010-07-07  Franz Holzinger  <franz@ttproducts.de>
+
+	* new feature: put the debug output into the file of your choice. The debug file will not be overwritten, if it is not empty.
+
+2010-05-31  Franz Holzinger  <franz@ttproducts.de>
+
+	* fix bug: print debug infos even afer a call_user_func_array
+	* fix bug: show debug output even if a FE user has been logged in and FEUSERNAMES is empty or it contains the FE name
+
+2010-05-29  Franz Holzinger  <franz@ttproducts.de>
+
+	* new feature: debug each array element until to the depth set by the maximum recursion level LEVEL
+
+2010-05-22  Franz Holzinger  <franz@ttproducts.de>
+
+	* support for PHP versions < 5.2.5 to remove the debug_backtrace parameter
+	* output of variables in colors and tables
+
+2010-05-12  Franz Holzinger  <franz@ttproducts.de>
+
+	* first alpha version
