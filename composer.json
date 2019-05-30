@@ -1,0 +1,38 @@
+{
+	"name": "chdubar/pruebatpaga",
+	"description": "Prueba de backend para Tpaga",
+	"type": "project",
+	"repositories": [
+		{
+			"type": "composer",
+			"url": "https://composer.typo3.org/"
+		}
+	],
+	"config": {
+		"secure-http": false
+	},
+
+	"require": {
+		"typo3/cms": "8.7.26",
+		"friendsoftypo3/extension-builder": "8.10.3",
+		"laxap/bootstrap-grids": "*@stable",
+		"gridelementsteam/gridelements": "*",
+		"dmitryd/typo3-realurl": "*@stable",
+		"sjbr/static-info-tables": "6.7.4",
+		"jambagecom/fh-debug": "0.6.6"
+	},
+	"license": "LGPL",
+	"authors": [
+		{
+			"name": "César Hansy Dueñas Barragán",
+			"email": "cesart234@gmail.com"
+		}
+	],
+"autoload":{  
+      "psr-4":{  
+         "CHDuBar\\PruebaTpagaEcommerce\\":"./typo3conf/ext/prueba_tpaga_ecommerce/Classes"
+     }
+   },
+	"minimum-stability": "dev"
+}
+
